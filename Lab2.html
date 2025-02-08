@@ -1,15 +1,44 @@
 <head>
-    
-    <title>Marzan's Form - INST377 - Lab 2</title>
+    <title>My Name Form</title>
+    <style>
+        body {
+            background-color: rosybrown;
+            font-family: monospace;
+        }
+        .form { 
+            margin: 10px;
+            font-size: 15px;
+        }
+        label {
+            font-size: 20px;
+        }
+
+        input {
+            margin: 5px;
+            padding: 5px;
+            font-size: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkred;
+        }
+        input[type="submit"] {
+        background-color: royalblue;
+        margin: 30px; 
+        }
+        
+    </style>
 </head>
 <body>
 
-    <h1> Form</h1>
-    <form name = "Favorite Animal" action="page2" method="get">
-        <label for="name">Enter your favorite animal</label> <!--Change label for, form name, everything-->
-        <input type="text" id="name" name="name" required>
-        
-        <button type="submit">Submit</button>
+    <h1>Guess The Spelling of My Name (pronounced mar-zon) - INST377 - Lab 2</h1>
+    <form action="lab2pt2.html" method="post">
+        <div class="form">
+            <label for="name">Guess:</label>
+            <input type="text" id="name" placeholder="Mar-zon" required>
+            <input type="submit" value="Submit">
+        </div>
     </form>
 
 </body>
+</html>
